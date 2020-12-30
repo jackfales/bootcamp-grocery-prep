@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="recipe.js"></script>
+<script src="randomRecipe.js"></script>
+<body>
+    <header>
+        <h1>Grocery Prep</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="randomRecipe.html">Random Recipe</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+    <main>
+        <div class="headline">
+            <h1 id="title"></h1>
+            <div id="ratings"><span id="dish-rating"></span> stars</div>
+        </div>
+
+        <div class="showcase">
+            <div>
+                <br>
+                <div id="description"></div>
+                <br>
+
+                <div class="dish-rating">
+                    <label for="select-rating">Rate this Dish</label>
+                    <select id="select-rating">
+                        <option selected="">Select Rating</option>
+                        <option value="1">1 stars</option>
+                        <option value="2">2 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                    <button id="post-rating">Post Rating</button>
+                </div>
+            </div>
+            <br>
+            <img id="dish-photo" height="250">
+        </div>
+
+        <br>
+        <div>
+            <button id="subtract">-</button>
+            <span>Serves</span>
+            <span id="servings"></span>
+            <button id="add">+</button>
+        </div>
+
+        <h2>Ingredients</h2>
+        <ul id="ingredients"> </ul>
+
+        <h2>Instructions</h2>
+        <ol id="instructions"> </ol>
+
+    </main>
+</body>
+</html>
